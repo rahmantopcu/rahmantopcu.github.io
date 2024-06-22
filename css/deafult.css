@@ -1,0 +1,33 @@
+.project-container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+
+    row-gap: 5%;
+}
+
+.project
+{
+    width: 400px;
+    height: 300px;
+
+    background-color: red;
+}
+
+@media (max-width: 1250px) {
+    
+    .project-container
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .project-container
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
