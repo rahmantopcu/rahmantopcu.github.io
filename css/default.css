@@ -3,6 +3,18 @@
     src: url(/fonts/EnglishTowneMedium-X3na.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(/fonts/JosefinSansRegular-x3LYV.ttf) format("truetype");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(/fonts/JosefinSansBold-OVA7o.ttf) format("truetype");
+    font-weight: 800;
+}
+
 .english-towne-regular {
     font-family: 'English Towne', serif;
     font-weight: 400;
@@ -15,8 +27,19 @@
     font-style: italic;
 }
 
+.josefin-sans-regular {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.josefin-sans-bold {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
 .section-container{
-    min-width: max-content;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -29,27 +52,41 @@
 
 .item-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 10px;
 }
 
 .item{
-    max-width: 400px;
-    aspect-ratio: 7 / 8;
+    aspect-ratio: 16 / 15;
 
     border-radius: 5px;
-    border-style:dotted;
-    border-color: darkgray;
+    border: 2px dotted darkgray;
     background-color: whitesmoke;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    grid-template-rows: 3fr 2fr;
 }
 
-.item p{
-    word-break: break-all;
+.item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.item div
+{
+    margin-top: auto;
+    margin-left: 10px;
+    margin-bottom: auto;
+}
+
+.item div h2{
+    margin: 0;
+    font-size: 30pt;    
+}
+
+.item div p{
+    margin: 0;
 }
 
 /* Add support for mobile later. */
