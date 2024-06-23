@@ -3,11 +3,6 @@
     src: url(/fonts/EnglishTowneMedium-X3na.ttf) format("truetype");
 }
 
-.header{
-    margin: 0;
-    font-size: 48pt;
-}
-
 .english-towne-regular {
     font-family: 'English Towne', serif;
     font-weight: 400;
@@ -19,18 +14,42 @@
     font-weight: 400;
     font-style: italic;
 }
-  
-.project-container{
+
+.section-container{
+    min-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.section-header{
+    margin: 0;
+    font-size: 50pt;
+}
+
+.item-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
-.project{
-    width: 100%;
-    background-color: red;
-    aspect-ratio: 1;
+.item{
+    max-width: 400px;
+    aspect-ratio: 7 / 8;
+
+    border-radius: 5px;
+    border-style:dotted;
+    border-color: darkgray;
+    background-color: whitesmoke;
+
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 3fr 2fr;
+}
+
+.item p{
+    word-break: break-all;
 }
 
 /* Add support for mobile later. */
