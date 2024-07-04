@@ -47,11 +47,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    width: 80%;
+    width: 85%;
 }
 
 .site-header {
     margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 60pt;
 }
 
@@ -112,6 +114,27 @@ body {
     width: auto;
 }
 
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+.navbar li {
+    float: right;
+    border-left: 2px solid black;
+}
+
+.navbar li a {
+    display: block;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 15pt;
+    text-decoration: none;
+}
 
 
 /* Add support for mobile later. */
