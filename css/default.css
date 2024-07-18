@@ -158,8 +158,9 @@ body
 
 /* Add support for mobile later. */
 
-@media screen and (max-width: 750px) {
+@media screen and not (min-width: 950px) {
     body {
         background-color: #474747;
+        color: red;
     }
 }
