@@ -1,6 +1,11 @@
-body {
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(25)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M3.25 10h13.5M10 3.25v13.5'  stroke-linecap='square' stroke-width='1' stroke='hsla(0, 0%, 84%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+body
+{
+    background-color: #ffffff;
+    background-image:  radial-gradient(#474747 0.5px, transparent 0.5px), radial-gradient(#474747 0.5px, #ffffff 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
 }
+  
 
 @font-face {
     font-family: 'English Towne';
@@ -121,20 +126,34 @@ body {
     overflow: hidden;
     background-color: whitesmoke;
     border: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar li {
-    float: right;
+    display: flex;
     border-left: 2px solid black;
 }
 
 .navbar li a {
-    display: block;
-    padding: 12px 15px;
+    padding-right: 12px;
+    padding-left: 12px;
     text-align: center;
     font-size: 15pt;
     text-decoration: none;
+    margin: auto;
 }
 
+.logo
+{
+    justify-self: flex-start;
+    margin-right: auto;
+}
+
+.logo h1
+{
+    font-size: 28pt;
+    margin: 12px 10px;
+}
 
 /* Add support for mobile later. */
