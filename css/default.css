@@ -156,6 +156,27 @@ body
     margin: 10px 16px;
 }
 
+.special-container-backdrop {
+
+    --mask: 
+      conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/10px 51% repeat-x,
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/10px 51% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+
+
+    background-color: black;
+    background-size: 10px 10px;
+    background-image:  repeating-linear-gradient(0deg, #343000, #343000 1px, black 1px, black);
+
+    padding: 10px;
+}
+
+.special-container-color
+{
+    color: rgb(255, 170, 0);
+}
+
 /* Add support for mobile later. */
 
 /* 
