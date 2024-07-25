@@ -179,7 +179,6 @@ body
 
 .portfolio-button {
     display: flex;
-    justify-items: center;
     justify-content: center;
     height: min-content;
     border: 2px solid black;
