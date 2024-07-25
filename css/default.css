@@ -173,9 +173,22 @@ body
     margin-bottom: 40px;
 }
 
-.special-container-color
-{
+.special-container-color {
     color: rgb(255, 170, 0);
+}
+
+.portfolio-button {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    height: min-content;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+.portfolio-button h2 {
+    margin: 16px 0px 10px 0px;
+    font-size: 24pt; 
 }
 
 /* Add support for mobile later. */
