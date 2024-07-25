@@ -170,6 +170,7 @@ body
     background-image:  repeating-linear-gradient(0deg, #343000, #343000 1px, black 1px, black);
 
     padding: 10px;
+    margin-bottom: 40px;
 }
 
 .special-container-color
