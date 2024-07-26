@@ -191,6 +191,10 @@ body
     font-size: 24pt; 
 }
 
+.current-page-link {
+    color: goldenrod;
+}
+
 /* Add support for mobile later. */
 
 /* 
