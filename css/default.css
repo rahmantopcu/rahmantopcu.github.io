@@ -5,11 +5,12 @@ body
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
 }
-  
+
 
 @font-face {
-    font-family: 'English Towne';
-    src: url(/fonts/EnglishTowneMedium-X3na.ttf) format("truetype");
+    font-family: 'Chomsky';
+    src: url(/fonts/chomsky.regular.otf) format("opentype");
+    font-weight: 400;
 }
 
 @font-face {
@@ -24,16 +25,10 @@ body
     font-weight: 800;
 }
 
-.english-towne-regular {
-    font-family: 'English Towne', serif;
+.chomsky-regular {
+    font-family: 'Chomsky', serif;
     font-weight: 400;
     font-style: normal;
-}
-  
-.english-towne-regular-italic {
-    font-family: 'English Towne', serif;
-    font-weight: 400;
-    font-style: italic;
 }
 
 .josefin-sans-regular {
