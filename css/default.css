@@ -131,8 +131,8 @@ body
 }
 
 .navbar li a {
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: center;
     font-size: 15pt;
     text-decoration: none;
@@ -153,11 +153,18 @@ body
 
 .special-container-backdrop {
 
+
+    --mask: 
+      conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/18px 51% repeat-x,
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/18px 51% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+    /* 
     --mask: 
       conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/10px 51% repeat-x,
       conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/10px 51% repeat-x;
     -webkit-mask: var(--mask);
-            mask: var(--mask);
+            mask: var(--mask); */
 
 
     background-color: black;
@@ -174,14 +181,13 @@ body
 
 .portfolio-button {
     display: flex;
-    justify-content: center;
     height: min-content;
     border: 2px solid black;
     background-color: whitesmoke;
 }
 
 .portfolio-button h2 {
-    margin: 16px 0px 10px 0px;
+    margin: 18px 0px 10px 10px;
     font-size: 24pt; 
 }
 
