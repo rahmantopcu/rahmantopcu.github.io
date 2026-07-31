@@ -1,0 +1,32 @@
+body {
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.message-image {
+    width: 40%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.message-header {
+    font-weight: 900;
+    font-size: 64pt;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30%;
+    margin-bottom: 0;
+}
+
+.message-text {
+    margin-top: 0;
+    font-size: 36pt;
+    font-family: 'Montserrat', sans-serif;
+}
